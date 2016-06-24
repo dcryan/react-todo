@@ -20,7 +20,7 @@ export default class TodosListItem extends React.Component {
     if(this.state.isEditing) {
       return (
         <td>
-          <input ref="taskName"/>
+          <input ref="taskName" defaultValue={task}/>
         </td>
       );
     }
